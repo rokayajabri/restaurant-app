@@ -4,7 +4,7 @@ import axios from 'axios';
 export const getMeals = createAsyncThunk(
     "meals/getMeals",
     async () => {
-            const response = await axios.get("http://localhost:5000/meals/all");
+            const response = await axios.get("https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood");
             return response.data;
         }
   );
